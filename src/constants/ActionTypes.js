@@ -1,0 +1,1 @@
+export const FETCH_ACTIVE_PETS = 'FETCH_ACTIVE_PETS'
