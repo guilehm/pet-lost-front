@@ -72,4 +72,5 @@ const RandomGallery = () => {
     )
 }
 
+
 export default RandomGallery
