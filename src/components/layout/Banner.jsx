@@ -12,6 +12,8 @@ const Banner = () => {
                                 <h3>Pet Lost</h3>
                                 <span className="line"></span>
                                 <p>Fazendo pets mais felizes</p>
+                                <a className="btn bg-theme ml-4 mt-4 w3_pvt-link-bnr scroll" data-blast="bgColor" href="#announce"
+                                    role="button">Anuncie agora</a>
                             </div>
                         </div>
                     </div>

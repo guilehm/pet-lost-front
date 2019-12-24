@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-expand-lg navbar-light navbar-fixed-top">
                 <h1>
-                    <a className="navbar-brand" href="index.html" data-blast="color">
+                    <a className="navbar-brand" href="/" data-blast="color">
                         PetLost
                     </a>
                 </h1>
