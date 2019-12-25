@@ -25,7 +25,7 @@ const PetCardGroup = ({ activePets, actions }) => {
                             title={pet.name}
                             description={pet.description}
                             date={pet.announcements.find(a => a.active === true).dateAdded}
-                            link='/hardcoded'
+                            link={`/pets/${pet.slug}/`}
                         />
                     )}
 
