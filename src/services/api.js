@@ -27,7 +27,7 @@ class API {
     }
 
     getRawQuery(params, endpoint = 'pets') {
-        const queryset = params.join('+')
+        const queryset = params.join('&')
         return axios.get(`${this.url}/${endpoint}/?${queryset}`)
     }
 }
