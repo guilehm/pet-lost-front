@@ -2,14 +2,12 @@ import React, { useEffect } from 'react'
 import PetCard from './PetCard'
 
 
-const PetCardGroup = ({ pets, actions }) => {
-
+const PetCardGroup = ({ activePets, actions }) => {
     useEffect(() => {
-        actions.fetchPets()
+        actions.fetchActivePets()
     }, [actions])
 
     return (
-
         <section className="blog_w3ls pb-lg-5 pb-4" id="posts">
             <div className="container py-sm-5 py-4">
                 <div className="title-desc text-center pb-sm-3 mb-lg-5">
@@ -30,7 +28,6 @@ const PetCardGroup = ({ pets, actions }) => {
                 </div>
             </div>
         </section>
-
     )
 }
 

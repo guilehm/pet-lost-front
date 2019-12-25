@@ -1,8 +1,8 @@
 import { createSelector } from 'reselect'
 
 
-const pets = state => state.pets
-export const getPets = createSelector(
-    pets,
-    pets => pets
+const activePets = state => state.activePets
+export const getActivePets = createSelector(
+    activePets,
+    activePets => activePets
 )

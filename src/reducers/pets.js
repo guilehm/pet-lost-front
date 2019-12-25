@@ -3,7 +3,7 @@ import {
 } from '../constants/ActionTypes'
 
 
-const pets = (state = [], action) => {
+const activePets = (state = [], action) => {
     switch (action.type) {
         case FETCH_ACTIVE_PETS:
             return [{ ...action.payload }]
@@ -13,4 +13,4 @@ const pets = (state = [], action) => {
 }
 
 
-export default pets
+export default activePets

@@ -5,7 +5,7 @@ import API from '../services/api'
 const Api = new API()
 
 
-export const fetchPets = () => {
+export const fetchActivePets = () => {
     return dispatch => {
         Api.getActivePets()
             .then(res => dispatch({

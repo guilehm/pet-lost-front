@@ -1,22 +1,22 @@
-import { getPets } from '../selectors'
+import { getActivePets } from '../selectors'
 import { bindActionCreators } from 'redux'
 import * as PetActions from '../actions'
 import { connect } from 'react-redux'
 import PetCardGroup from '../components/pets/PetCardGroup'
 
 
-
 const mapStateToProps = state => ({
-    pets: getPets(state)
+    activePets: getActivePets(state),
 })
 
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(PetActions, dispatch)
 })
 
-const PetList = connect(
+const ActivePetList = connect(
     mapStateToProps,
     mapDispatchToProps
 )(PetCardGroup)
 
-export default PetList
+
+export default ActivePetList

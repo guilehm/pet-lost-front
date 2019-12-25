@@ -1,9 +1,9 @@
-import pets from './pets'
+import activePets from './pets'
 import { combineReducers } from 'redux'
 
 
 const rootReducer = combineReducers({
-    pets,
+    activePets,
 })
 
 
