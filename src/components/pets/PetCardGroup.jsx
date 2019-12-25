@@ -7,6 +7,8 @@ const PetCardGroup = ({ activePets, actions }) => {
         actions.fetchActivePets()
     }, [actions])
 
+    const pets = activePets.results || []
+
     return (
         <section className="blog_w3ls pb-lg-5 pb-4" id="posts">
             <div className="container py-sm-5 py-4">
@@ -16,14 +18,16 @@ const PetCardGroup = ({ activePets, actions }) => {
                 </div>
                 <div className="row mt-4">
 
-                    <PetCard
-                        src="images/g1.jpg"
-                        title="Cras ultricies ligula sed."
-                        description="At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit
-                            ametLorem ipsum dolor sit amet,sed diam nonumy."
-                        date="01.10.2018"
-                        link="#exampleModal2"
-                    />
+                    {pets.map(pet =>
+                        <PetCard
+                            key={pet.id}
+                            src={pet.mainPicture.url}
+                            title={pet.name}
+                            description={pet.description}
+                            date={pet.announcements.find(a => a.active === true).dateAdded}
+                            link='/hardcoded'
+                        />
+                    )}
 
                 </div>
             </div>
