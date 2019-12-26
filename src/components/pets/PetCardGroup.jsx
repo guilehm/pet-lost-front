@@ -13,8 +13,8 @@ const PetCardGroup = ({ activePets, actions }) => {
         <section className="blog_w3ls pb-lg-5 pb-4" id="posts">
             <div className="container py-sm-5 py-4">
                 <div className="title-desc text-center pb-sm-3 mb-lg-5">
-                    <h3 className="main-title-w3pvt">recent blog</h3>
-                    <p>Helping animals  working on environmental issues.</p>
+                    <h3 className="main-title-w3pvt">Ajude estes animais</h3>
+                    <p>A encontrarem suas famílias.</p>
                 </div>
                 <div className="row mt-4">
 
