@@ -1,7 +1,7 @@
 import React from 'react'
 
 const API_CROP_URL =
-    process.env.REACT_APP_API_CROP_URL || 'https://gui-bloodborne.herokuapp.com/api/smartcrop/download'
+    process.env.REACT_APP_API_CROP_URL || 'https://gui-bloodborne-nginx.herokuapp.com/api/smartcrop/download'
 
 const CROP_MAX_WIDTH = 256
 const CROP_MAX_HEIGHT = 256
