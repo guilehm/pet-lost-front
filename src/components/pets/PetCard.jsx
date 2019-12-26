@@ -1,7 +1,7 @@
 import React from 'react'
 
-const CROP_BASE_URL =
-    process.env.REACT_APP_CROP_BASE_URL || 'https://gui-bloodborne.herokuapp.com/api/smartcrop/download'
+const API_CROP_URL =
+    process.env.REACT_APP_API_CROP_URL || 'https://gui-bloodborne.herokuapp.com/api/smartcrop/download'
 
 const CROP_MAX_WIDTH = 256
 const CROP_MAX_HEIGHT = 256
@@ -17,7 +17,7 @@ const PetCard = ({ src, title, description, date, link }) => {
                     <a href={link} data-toggle="modal" aria-pressed="false" data-target={link}
                         role="button">
                         <img className="card-img-bottom"
-                            src={`${CROP_BASE_URL}/?url=${src}&width=${CROP_MAX_WIDTH}&height=${CROP_MAX_HEIGHT}`} alt={title} />
+                            src={`${API_CROP_URL}/?url=${src}&width=${CROP_MAX_WIDTH}&height=${CROP_MAX_HEIGHT}`} alt={title} />
                         <span className="fa fa-user post-icon bg-theme" aria-hidden="true" data-blast="bgColor"></span>
 
                     </a>
