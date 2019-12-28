@@ -6,3 +6,10 @@ export const getActivePets = createSelector(
     activePets,
     activePets => activePets
 )
+
+
+const banners = state => state.layout
+export const getBanners = createSelector(
+    banners,
+    banners => banners
+)
