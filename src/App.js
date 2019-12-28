@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 
 import Header from './components/layout/Header'
-import Banner from './components/layout/Banner'
+import Banner from './containers/Banner.container'
 import RandomGallery from './components/layout/RandomGallery'
 import PetList  from './containers/PetCardGroup.container'
 
