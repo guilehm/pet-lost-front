@@ -11,7 +11,7 @@ const PetCard = ({ src, title, description, date, link }) => {
 
     return (
 
-        <div className="col-lg-4 col-md-6 mt-sm-0 mt-4">
+        <div className="col-lg-4 col-md-6 mt-sm-0 mt-4 mb-4">
             <div className="card">
                 <div className="card-header p-0 position-relative">
                     <a href={link} data-toggle="modal" aria-pressed="false" data-target={link}
