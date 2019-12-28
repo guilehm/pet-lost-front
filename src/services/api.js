@@ -30,6 +30,10 @@ class API {
         const queryset = params.join('&')
         return axios.get(`${this.url}/${endpoint}/?${queryset}`)
     }
+
+    getBanners() {
+        return axios.get(`${this.url}/banners/`)
+    }
 }
 
 
