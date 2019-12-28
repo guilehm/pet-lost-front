@@ -1,1 +1,2 @@
 export const FETCH_ACTIVE_PETS = 'FETCH_ACTIVE_PETS'
+export const FETCH_BANNERS = 'FETCH_BANNERS'
