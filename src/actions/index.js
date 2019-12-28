@@ -14,3 +14,13 @@ export const fetchActivePets = () => {
             }))
     }
 }
+
+export const fetchBanners = () => {
+    return dispatch => {
+        Api.getBanners()
+            .then(res => dispatch({
+                type: types.FETCH_BANNERS,
+                payload: res.data.results
+            }))
+    }
+}
