@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
-const Banner = () => {
+const Banner = ({banners, actions}) => {
+
+    useEffect(() => {
+        actions.fetchBanners()
+    }, [actions])
+
     return (
         <div className="callbacks_container">
             <ul className="rslides" id="slider3">
