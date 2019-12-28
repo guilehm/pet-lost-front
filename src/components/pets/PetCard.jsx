@@ -22,7 +22,7 @@ const PetCard = ({ src, title, description, date, link }) => {
 
                     </a>
                 </div>
-                <div className="card-body">
+                <div className="card-body" style={cardBodyStyle}>
                     <h5 className="blog-title card-title font-weight-bold">
                         <a href={link} data-toggle="modal" aria-pressed="false" data-target={link}
                             role="button">{title}</a>
@@ -38,6 +38,11 @@ const PetCard = ({ src, title, description, date, link }) => {
         </div>
 
     )
+}
+
+
+const cardBodyStyle = {
+    minHeight: '250px'
 }
 
 
