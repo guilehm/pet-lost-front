@@ -7,6 +7,25 @@ const Banner = ({banners, actions}) => {
         actions.fetchBanners()
     }, [actions])
 
+    let addButtons = banner => {
+        let { buttonOne, buttonOneLink, buttonTwo, buttonTwoLink } = banner
+
+        let markup = (text, link, second) => {
+            if (!text) return ''
+            let className = "btn bg-theme mt-4 w3_pvt-link-bnr scroll"
+            if (second) className += " ml-4"
+            return (
+                <a className={className}
+                    data-blast="bgColor"
+                    href={link}
+                    role="button">{text}
+                </a>
+            )
+        }
+        return [markup(buttonOne, buttonOneLink), markup(buttonTwo, buttonTwoLink, true)]
+
+    }
+
     return (
         <div className="callbacks_container">
             <ul className="rslides" id="slider3">
