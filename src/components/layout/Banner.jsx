@@ -62,4 +62,8 @@ const Banner = ({ banners, actions }) => {
     )
 }
 
+let bannerStyle = url => ({
+    background: `url(${url}) bottom no-repeat`
+})
+
 export default Banner
