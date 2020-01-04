@@ -8,7 +8,7 @@ export const getActivePets = createSelector(
 )
 
 
-const banners = state => state.layout
+const banners = state => state.layout.banners
 export const getBanners = createSelector(
     banners,
     banners => banners
