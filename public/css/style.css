@@ -392,6 +392,11 @@ label {
 .banner {
     position: relative;
     z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 #slider {
@@ -602,32 +607,6 @@ ul.callbacks_tabs {
     color: #fff;
 }
 
-.banner1 {
-    background: url(../images/banner1.jpg) bottom no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
-
-.banner2 {
-    background: url(../images/banner2.jpg) bottom no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
-
-.banner3 {
-    background: url(../images/banner3.jpg) bottom no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-}
 
 .banner:before {
     position: absolute;
@@ -1841,7 +1820,7 @@ ul.social-iconsv2 li:last-child {
     .modal-title {
         font-size: 1.1em;
     }
-   
+
 }
 
 @media screen and (max-width: 384px) {
