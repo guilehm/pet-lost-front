@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 
-const Banner = ({banners, actions}) => {
+const Banner = ({ banners, actions }) => {
 
     useEffect(() => {
         actions.fetchBanners()
