@@ -20,7 +20,17 @@ export const fetchBanners = () => {
         Api.getBanners()
             .then(res => dispatch({
                 type: types.FETCH_BANNERS,
-                payload: res.data.results
+                payload: res.data.results,
+            }))
+    }
+}
+
+export const fetchPetDetail = petSlug => {
+    return dispatch => {
+        Api.getPetDetail(petSlug)
+            .then(res => dispatch({
+                type: types.FETCH_PET_DETAIL,
+                payload: res.data,
             }))
     }
 }
