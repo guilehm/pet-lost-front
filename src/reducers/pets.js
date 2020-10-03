@@ -1,9 +1,10 @@
 import {
     FETCH_ACTIVE_PETS,
+    FETCH_PET_DETAIL,
 } from '../constants/ActionTypes'
 
 
-const activePets = (state = [], action) => {
+export const activePets = (state = [], action) => {
     switch (action.type) {
         case FETCH_ACTIVE_PETS:
             return { ...action.payload }
@@ -13,4 +14,11 @@ const activePets = (state = [], action) => {
 }
 
 
-export default activePets
+export const selectedPet = (state = [], action) => {
+    switch (action.type) {
+        case FETCH_PET_DETAIL:
+            return { ...action.payload }
+        default:
+            return state
+    }
+}
