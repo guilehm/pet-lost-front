@@ -13,3 +13,10 @@ export const getBanners = createSelector(
     banners,
     banners => banners
 )
+
+
+const selectedPet = state => state.selectedPet
+export const getSelectedPet = createSelector(
+    selectedPet,
+    selectedPet => selectedPet
+)
