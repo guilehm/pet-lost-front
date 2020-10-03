@@ -31,7 +31,7 @@ const Banner = ({ banners, actions }) => {
             <ul className="rslides">
                 {banners.slice(0, 1).map(banner =>
 
-                    <li className="banner" style={bannerStyle(banner.picture)}>
+                    <li className="banner" key={banner.slug} style={bannerStyle(banner.picture)}>
                         <div className="container">
                             <div className="banner-text">
                                 <div className="slider-info">
