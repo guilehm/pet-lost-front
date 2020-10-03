@@ -34,6 +34,10 @@ class API {
     getBanners() {
         return axios.get(`${this.url}/banners/`)
     }
+
+    getPetDetail(petSlug) {
+        return axios.get(`${this.url}/pets/${petSlug}`)
+    }
 }
 
 
