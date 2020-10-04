@@ -7,6 +7,7 @@ import RandomGallery from './components/layout/RandomGallery'
 import PetList from './containers/PetCardGroup.container'
 import PetDetail from './containers/PetDetail.container'
 import NotFoundPage from './components/layout/NotFoundPage'
+import Footer from './components/layout/Footer'
 import {
     BrowserRouter as Router,
     Switch,
@@ -25,6 +26,7 @@ const App = () => (
                     <Banner />
                     <PetList />
                     <RandomGallery />
+                    <Footer />
                 </Route>
                 <Route path='*' exact={true} component={NotFoundPage} />
             </Switch>
