@@ -7,15 +7,15 @@ const Banner = ({ banners, actions }) => {
         actions.fetchBanners()
     }, [actions])
 
-    let addButtons = banner => {
-        let { buttonOne, buttonOneLink, buttonTwo, buttonTwoLink } = banner
+    const addButtons = banner => {
+        const { buttonOne, buttonOneLink, buttonTwo, buttonTwoLink } = banner
 
         let markup = (text, link, second) => {
             if (!text) return ''
             let className = "btn bg-theme mt-4 w3_pvt-link-bnr scroll"
             if (second) className += " ml-4"
             return (
-                <a className={className}
+                <a key={link} className={className}
                     data-blast="bgColor"
                     href={link}
                     role="button">{text}
@@ -30,7 +30,6 @@ const Banner = ({ banners, actions }) => {
         <div className="callbacks_container">
             <ul className="rslides">
                 {banners.slice(0, 1).map(banner =>
-
                     <li className="banner" key={banner.slug} style={bannerStyle(banner.picture)}>
                         <div className="container">
                             <div className="banner-text">
@@ -43,15 +42,13 @@ const Banner = ({ banners, actions }) => {
                             </div>
                         </div>
                     </li>
-
                 )}
-
             </ul>
         </div>
     )
 }
 
-let bannerStyle = url => ({
+const bannerStyle = url => ({
     background: `url(${url}) center no-repeat`
 })
 
