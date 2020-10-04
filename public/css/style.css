@@ -796,6 +796,12 @@ h2.w3pvt-title {
     font-weight: 700;
 }
 
+h3.w3pvt-title {
+    font-size: 2.6em;
+    color: #fff;
+    font-weight: 700;
+}
+
 .w3-stats p {
     width: 75%;
     font-size: 1.1em;
@@ -1496,6 +1502,10 @@ ul.social-iconsv2 li:last-child {
         font-size: 2.6em;
     }
 
+    h3.w3pvt-title {
+        font-size: 2.4em;
+    }
+
 }
 
 @media screen and (max-width: 1080px) {
@@ -1522,6 +1532,10 @@ ul.social-iconsv2 li:last-child {
 
     h2.w3pvt-title {
         font-size: 2.3em;
+    }
+
+    h3.w3pvt-title {
+        font-size: 2.1em;
     }
 
     .w3-stats p {
@@ -1553,6 +1567,10 @@ ul.social-iconsv2 li:last-child {
 
     h2.w3pvt-title {
         font-size: 2.1em;
+    }
+
+    h3.w3pvt-title {
+        font-size: 1.9em;
     }
 
     p.count-text {
@@ -1632,6 +1650,10 @@ ul.social-iconsv2 li:last-child {
 
     h2.w3pvt-title {
         font-size: 1.6em;
+    }
+
+    h3.w3pvt-title {
+        font-size: 1.4em;
     }
 
     .counter span.fa {
@@ -1816,6 +1838,9 @@ ul.social-iconsv2 li:last-child {
     }
     h2.w3pvt-title {
         font-size: 1.3em;
+    }
+    h3.w3pvt-title {
+        font-size: 1.1em;
     }
     .modal-title {
         font-size: 1.1em;
