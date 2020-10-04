@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import PetCard from './PetCard'
+import { BASE_PREFIX } from '../../settings'
 
 
 const PetCardGroup = ({ activePets, actions }) => {
@@ -25,7 +26,7 @@ const PetCardGroup = ({ activePets, actions }) => {
                             title={pet.name}
                             description={pet.description}
                             date={pet.announcements.find(a => a.active === true).dateAdded}
-                            link={`/pets/${pet.slug}/`}
+                            link={`${BASE_PREFIX}/pets/${pet.slug}/`}
                         />
                     )}
 

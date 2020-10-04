@@ -14,18 +14,20 @@ import {
     Route,
 } from "react-router-dom"
 
+import { BASE_PREFIX } from './settings'
+
 const App = () => (
     <Router>
         <div className="App">
             <Switch>
-                <Route exact path="/pets/:slug">
+                <Route exact path={`${BASE_PREFIX}/pets/:slug`}>
                     <PetDetail />
                 </Route>
-                <Route exact path="/">
+                <Route exact path={`${BASE_PREFIX}/`}>
                     <Header />
                     <Banner />
                     <PetList />
-                    <RandomGallery />
+                    {/* <RandomGallery /> */}
                     <Footer />
                 </Route>
                 <Route path='*' exact={true} component={NotFoundPage} />
