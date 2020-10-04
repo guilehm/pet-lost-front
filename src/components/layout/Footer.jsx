@@ -7,7 +7,7 @@ const Footer = () =>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 text-lg-right mt-lg-0 mt-4">
-                        <h3 class="w3pvt-title">Sobre a PetLost</h3>
+                        <h3 className="w3pvt-title">Sobre a PetLost</h3>
                         <p className="text-secondary mt-2">Queremos ajudar os animais a encontrarem suas famílias.</p>
                     </div>
                 </div>
