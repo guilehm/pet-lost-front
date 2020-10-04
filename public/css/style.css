@@ -1873,3 +1873,15 @@ ul.social-iconsv2 li:last-child {
 }
 
 /* -- //Responsive code -- */
+
+.bg-custom-dark {
+    background: #000
+}
+
+.text-custom-theme {
+    color: #d3b800;
+}
+
+.cpy-custom-right {
+    padding: 1em 0;
+}
