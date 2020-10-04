@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pet-lost-front/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/pet-lost-front/static/js/main.a6b3821e.chunk.js",
+    "main.js.map": "/pet-lost-front/static/js/main.a6b3821e.chunk.js.map",
+    "runtime-main.js": "/pet-lost-front/static/js/runtime-main.3539d3ef.js",
+    "runtime-main.js.map": "/pet-lost-front/static/js/runtime-main.3539d3ef.js.map",
+    "static/js/2.b9e2e89d.chunk.js": "/pet-lost-front/static/js/2.b9e2e89d.chunk.js",
+    "static/js/2.b9e2e89d.chunk.js.map": "/pet-lost-front/static/js/2.b9e2e89d.chunk.js.map",
+    "index.html": "/pet-lost-front/index.html",
+    "precache-manifest.8aa144df09a374da304b23e74fe06473.js": "/pet-lost-front/precache-manifest.8aa144df09a374da304b23e74fe06473.js",
+    "service-worker.js": "/pet-lost-front/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/pet-lost-front/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.b9e2e89d.chunk.js.LICENSE": "/pet-lost-front/static/js/2.b9e2e89d.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3539d3ef.js",
+    "static/js/2.b9e2e89d.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.a6b3821e.chunk.js"
+  ]
+}
