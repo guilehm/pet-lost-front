@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from "react-router-dom"
+
 const API_CROP_URL =
     process.env.REACT_APP_API_CROP_URL || 'https://gui-bloodborne-nginx.herokuapp.com/api/smartcrop/download'
 
@@ -29,10 +31,7 @@ const PetCard = ({ src, title, description, date, link }) => {
                     </h5>
                     <p>{description}</p>
                     <label className="mt-2"> <span className="fa fa-calendar mr-3"></span>{date}</label>
-                    <button type="button" className="btn blog-btn wthree-bnr-btn" data-toggle="modal" aria-pressed="false"
-                        data-target={link}>
-                        Mais detalhes
-                    </button>
+                    <Link className="btn blog-btn wthree-bnr-btn" to={link}>Mais Detalhes</Link>
                 </div>
             </div>
         </div>
