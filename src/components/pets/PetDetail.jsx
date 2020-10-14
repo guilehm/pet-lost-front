@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-
 import API from '../../services/api'
-
 import { useParams } from 'react-router-dom'
 
+
 const Api = new API()
+
 
 const PetDetail = ({ actions }) => {
     const { slug } = useParams()
@@ -14,7 +14,6 @@ const PetDetail = ({ actions }) => {
     const handleSuccess = res => {
         setPet(res.data)
     }
-    console.log('caiu aqui')
 
     useEffect(() => {
         Api.getPetDetail(slug)
@@ -23,7 +22,7 @@ const PetDetail = ({ actions }) => {
     }, [slug])
 
     return (
-        <div>{pet.name}</div>
+        <div>Pet Detail: {pet.name}</div>
     )
 }
 

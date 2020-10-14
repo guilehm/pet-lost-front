@@ -14,16 +14,15 @@ import {
     Route,
 } from "react-router-dom"
 
-import { BASE_PREFIX } from './settings'
 
 const App = () => (
     <Router>
         <div className="App">
             <Switch>
-                <Route exact path={`${BASE_PREFIX}/pets/:slug`}>
+                <Route exact path={`/pets/:slug`}>
                     <PetDetail />
                 </Route>
-                <Route exact path={`${BASE_PREFIX}/`}>
+                <Route exact path={`/`}>
                     <Header />
                     <Banner />
                     <PetList />
