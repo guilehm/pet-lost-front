@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import Menu from './components/layout/Menu'
 import Header from './components/layout/Header'
 import Banner from './containers/Banner.container'
 import RandomGallery from './components/layout/RandomGallery'
@@ -23,10 +24,10 @@ const App = () => (
                     <PetDetail />
                 </Route>
                 <Route exact path={`/`}>
+                    <Menu />
                     <Header />
                     <Banner />
                     <PetList />
-                    {/* <RandomGallery /> */}
                     <Footer />
                 </Route>
                 <Route path='*' exact={true} component={NotFoundPage} />
